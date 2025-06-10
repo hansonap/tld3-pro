@@ -19,6 +19,15 @@ This config got the printer up and running however either the x-axis or y-axis w
 was another issue.
 > TODO: Compare this config to the current one and docuement the differences.
 
+### Pizo Buzzer
+Klipper does not support the use a buzzer / speaker for notifications but 
+[this](https://github.com/Klipper3d/klipper/pull/1554/commits/42fe774f90b04a824edff7ceabea13ff3c2d41f9) 
+pull request shows how to add it as an output pin and how to define a gcode macro to use it. Additionally,
+[this](https://github.com/ac316scu/songs.cfg/blob/main/songs.cfg) config shows how to play songs with it. I
+currently don't have a use case for it, but I envision a tone being played each time the printer needs human
+interaction, if a failed print was detected, when the print had finished, or after the bed had cooled down
+enough to release parts.
+
 ### Misc.
 * [jonpackard/klipper_config_tld3pro](https://github.com/jonpackard/klipper_config_tld3pro) - This is a TL-D3
   Pro Klipper conversion, but I have not yet studdied it.
